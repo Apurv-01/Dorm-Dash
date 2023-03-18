@@ -5,7 +5,7 @@ app.set('view engine', 'ejs');
 //
 app.listen(process.env.PORT||3000,()=>console.log("Server started on port 3000"));
 //
- mongoose.connect("mongodb+srv://Apurv:YukZV8WPzzJCS1G4@cluster0.hl6wk8j.mongodb.net/MealDB");
+ mongoose.connect(`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.hl6wk8j.mongodb.net/${process.env.DB_NAME}`);
  const mealSchema = mongoose.Schema({
    name:Object,
    date:String
