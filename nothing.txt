@@ -1,29 +1,30 @@
- const mealSchema = mongoose.Schema({
-    name:Object,
-    date:Date
-    
- })
+//  const mealSchema = mongoose.Schema({
+//    name:Object,
+//    date:String
+   
+// })
 
- const meal = mongoose.model('meal',mealSchema);
- const meal1 = new meal({
-    name:{
-      breakfast:["TEA","POORI","SUBZI","PICKLE"],
-      lunch:["OKRA KADHI","ALOO MATAR","RICESALAD","CHAPATI","PICKEL"],
-      snacks:["Tea","Chips"],
-      dinner:["Rice","Chapati","Paneer Methi Matar","Kadhai Chicken","Lobiya Dal"]
-    },
-    date: new Date(2023,3,17),})
+// const meal = mongoose.model('meal',mealSchema);
+// const meal1 = new meal({
+//    name:{
+//      breakfast:["TEA","POORI","SUBZI","PICKLE"],
+//      lunch:["OKRA KADHI","ALOO MATAR","RICESALAD","CHAPATI","PICKEL"],
+//      snacks:["Tea","Chips"],
+//      dinner:["Rice","Chapati","Paneer Methi Matar","Kadhai Chicken","Lobiya Dal"]
+//    },
+//    date: new Date(2023,2,17).toLocaleString().split(',')[0]})
 
-    const meal2 = new meal({
-      name:{
-        breakfast:["TEA","PAV BHAJI","MILK","PICKLE"],
-        lunch:["DAL MAKHAN","KADAI VEG",
-         "BOONDI RAITA","PICKEL"],
-        snacks:["Tea","Sweet Roll"],
-        dinner:["Matar Rice","Chapati","Rajma","Aloo Cabbage Matar","Kheer"]
-      },
-      date: new Date(2023,3,18),
-    
- })
+//    const meal2 = new meal({
+//      name:{
+//        breakfast:["TEA","PAV BHAJI","MILK","PICKLE"],
+//        lunch:["DAL MAKHAN","KADAI VEG",
+//         "BOONDI RAITA","PICKEL"],
+//        snacks:["Tea","Sweet Roll"],
+//        dinner:["Matar Rice","Chapati","Rajma","Aloo Cabbage Matar","Kheer"]
+//      },
+//      date: new Date(2023,2,18).toLocaleString().split(',')[0]
+// })
+// meal1.save();
+// meal2.save();
  meal1.save();
  meal2.save();
