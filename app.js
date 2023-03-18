@@ -36,7 +36,7 @@ const meal1 = new meal({
 })
 app.get('/',(req,res)=>{
    const today = new Date().toLocaleString().split(',')[0];
-   meal.find({date:today}).then((x)=>{
+   meals.find({date:today}).then((x)=>{
       console.log(x);
       console.log(x[0]);
     res.render("home",{breakfast:x[0].name.breakfast,lunch:x[0].name.lunch,snacks:x[0].name.snacks,dinner:x[0].name.dinner});
