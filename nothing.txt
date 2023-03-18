@@ -26,5 +26,4 @@
 // })
 // meal1.save();
 // meal2.save();
- meal1.save();
- meal2.save();
+
