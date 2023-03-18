@@ -4,7 +4,10 @@ const mongoose = require('mongoose');
 app.set('view engine', 'ejs');
 //
 //
- mongoose.connect(`mongodb+srv://Apurv:YukZV8WPzzJCS1G4@cluster0.hl6wk8j.mongodb.net/MealDB`);
+ mongoose.connect(`mongodb+srv://Apurv:YukZV8WPzzJCS1G4@cluster0.hl6wk8j.mongodb.net/MealDB`,
+ {
+   useNewUrlParser: true
+ });
  const mealSchema = mongoose.Schema({
    name:Object,
    date:String
