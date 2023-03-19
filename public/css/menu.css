@@ -1,0 +1,20 @@
+.main{
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-bottom: 5em;
+}
+.main-heading{
+    margin-top: 2em;
+    text-align: center;
+    font-family: 'Rubik Dirt', cursive;
+}
+.meal-heading{
+    margin-top: 2em;
+    font-family: 'Alfa Slab One', cursive;
+
+}
+.list-item{
+    font-family: 'Oswald', sans-serif;
+    font-size: larger;
+    padding-bottom: 1em;
+}

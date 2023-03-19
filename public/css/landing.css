@@ -1,0 +1,78 @@
+
+:root {
+    --jumbotron-padding-y: 3rem;
+  }
+  
+  .jumbotron {
+    padding-top: var(--jumbotron-padding-y);
+    padding-bottom: var(--jumbotron-padding-y);
+    margin-bottom: 0;
+    background-color: #fff;
+  }
+  @media (min-width: 768px) {
+    .jumbotron {
+      padding-top: calc(var(--jumbotron-padding-y) * 2);
+      padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+    }
+  }
+  .intro{
+    padding-top: 11em;
+    padding-bottom: 10em;
+  }
+  .intropara{
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 1em;
+    font-size: x-large;
+  }
+  .jumbotron p:last-child {
+    margin-bottom: 0;
+  }
+  .boxheading{
+    margin-top: 1.5em;
+    color: #fff;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: xx-large;
+    text-align: center;
+  }
+.box1,.box2,.box3{
+  background-color: red;
+}
+.box1,.box3:hover{
+  cursor: not-allowed;};
+
+.box1,.box3{
+  opacity:0.6;
+}
+
+.box:hover{
+  opacity: 0.6;
+}
+
+.card-body{
+  min-height: 12em;
+  align-items: center;
+}
+
+  .jumbotron-heading {
+    font-family: 'Alfa Slab One', cursive;
+    font-weight: 300;
+    font-size: xxx-large;
+  }
+  
+  .jumbotron .container {
+    max-width: 40rem;
+  }
+  
+  footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  
+  footer p {
+    margin-bottom: .25rem;
+  }
+  a{
+    text-decoration:none
+  }
+  .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+  

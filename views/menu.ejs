@@ -1,0 +1,34 @@
+<%- include('./partials/header'); -%>
+
+<div class="main">
+        <h1 class="main-heading">Today's Menu</h1>
+        <br>
+        <h3 class="meal-heading text-muted">Breakfast</h3>
+        <ul class="list-group">
+            <% breakfast.forEach(function(breakfast){ %>
+                <li class="list-item list-group-item"><%= breakfast %></li>
+            <%  }); %>
+        </ul>
+        <h3 class="meal-heading text-muted">Lunch</h3>
+        <ul class="list-group">
+            <% lunch.forEach(function(lunch){ %>
+                <li class="list-item list-group-item"><%= lunch %></li>
+            <%  }); %>
+        </ul>
+        <h3 class="meal-heading text-muted">Snacks</h3>
+        <ul class="list-group">
+            <% snacks.forEach(function(snack){ %>
+                <li class="list-item list-group-item"><%=snack%></li>
+            <%  }); %>
+        </ul>
+        <h3 class="meal-heading text-muted">Dinner</h3>
+        <ul class="list-group">
+            <% dinner.forEach(function(dinner){ %>
+                <li class="list-item list-group-item"><%= dinner %></li>
+            <%  }); %>
+        </ul>
+    </div>
+  </div>
+
+</body>
+</html>
