@@ -36,13 +36,13 @@ const meal1 = new meal({
 })
 app.get('/',(req,res)=>{
    const today = new Date().toLocaleString().split(',')[0];
-   meal.find({date:today}).then((x)=>{
+   meal.find({date:"19/3/2023"}).then((x)=>{
       console.log(x);
       console.log(x[0]);
     res.render("home",{breakfast:x[0].name.breakfast,lunch:x[0].name.lunch,snacks:x[0].name.snacks,dinner:x[0].name.dinner});
    }).catch((err)=>console.log(err))
 })
-app.listen(process.env.PORT||5000,()=>console.log("Server started on port 3000"));
+app.listen(process.env.PORT||5000,()=>console.log(`Server started on port ${process.env.PORT}`));
 
 
 
