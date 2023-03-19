@@ -35,9 +35,13 @@ const meal1 = new meal({
      date: new Date(2023,2,18).toLocaleString().split(',')[0]
 })
 app.get('/',(req,res)=>{
-   const today = new Date().toLocaleString().split(',')[0];
+   const today = new Date();
+   const dd = today.getDate();
+   const mm = today.getMonth()+1;
+   const yyyy = today.getFullYear();
+   const formattedToday = `${dd}/${mm}/${yyyy}`;
    console.log(today);
-   meal.find({date:today}).then((x)=>{
+   meal.find({date:formattedToday}).then((x)=>{
       console.log(x);
       console.log(x[0]);
     res.render("home",{breakfast:x[0].name.breakfast,lunch:x[0].name.lunch,snacks:x[0].name.snacks,dinner:x[0].name.dinner});
