@@ -7,7 +7,7 @@ app.set('view engine', 'ejs');
  mongoose.connect(`mongodb+srv://Apurv:YukZV8WPzzJCS1G4@cluster0.hl6wk8j.mongodb.net/MealDB`,
  {
    useNewUrlParser: true
- });
+ }).then(()=>console.log("connected to mongoose"));
  const mealSchema = mongoose.Schema({
    name:Object,
    date:String
@@ -36,13 +36,13 @@ const meal1 = new meal({
 })
 app.get('/',(req,res)=>{
    const today = new Date().toLocaleString().split(',')[0];
-   meals.find({date:today}).then((x)=>{
+   meal.find({date:today}).then((x)=>{
       console.log(x);
       console.log(x[0]);
     res.render("home",{breakfast:x[0].name.breakfast,lunch:x[0].name.lunch,snacks:x[0].name.snacks,dinner:x[0].name.dinner});
    }).catch((err)=>console.log(err))
 })
-app.listen(process.env.PORT||3000,()=>console.log("Server started on port 3000"));
+app.listen(process.env.PORT||5000,()=>console.log("Server started on port 3000"));
 
 
 
