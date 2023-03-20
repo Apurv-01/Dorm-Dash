@@ -3,6 +3,10 @@
     margin-right: 3em;
     margin-bottom: 5em;
 }
+a{
+    text-decoration: none;
+    color: white;
+}
 .main-heading{
     margin-top: 2em;
     text-align: center;
@@ -17,4 +21,14 @@
     font-family: 'Oswald', sans-serif;
     font-size: larger;
     padding-bottom: 1em;
+}
+.bottom-text{
+    margin-top: 2em;
+    font-family: 'Alfa Slab One', cursive;
+    
+}
+.bottom{
+    text-align: center;
+    margin-left: 4em;
+    margin-bottom: 3em;
 }

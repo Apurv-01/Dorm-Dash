@@ -1,7 +1,7 @@
 <%- include('./partials/header'); -%>
 
 <div class="main">
-        <h1 class="main-heading">Today's Menu</h1>
+        <h1 class="main-heading"><%=Day%>'s Menu</h1>
         <br>
         <h3 class="meal-heading text-muted">Breakfast</h3>
         <ul class="list-group">
@@ -28,6 +28,13 @@
             <%  }); %>
         </ul>
     </div>
+    <%if(Day =="Today"){%>
+        <div class="bottom">
+        <h3 class="bottom-text">Curious! Check Out Tommorrow's Menu</h3>
+        <button type="button" class="btn btn-danger"><a href="/tomorrow-mess-menu">Here</a></button>
+    </div>
+    <%}%>
+
   </div>
 
 </body>
