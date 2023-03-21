@@ -1,11 +1,11 @@
 const express = require('express');
 const app = express();
 app.use(express.static( 'public'));
-
 const mongoose = require('mongoose');
 app.set('view engine', 'ejs');
 //
 //
+ 
  mongoose.connect(`mongodb+srv://Apurv:YukZV8WPzzJCS1G4@cluster0.hl6wk8j.mongodb.net/MealDB`,
  {
    useNewUrlParser: true
@@ -41,8 +41,6 @@ app.get('/tomorrow-mess-menu',(req,res)=>{
   let tomorrowyyyy = tomorrow.getFullYear();
   let formattedtomorrow = `${tomorrowdd}/${tomorrowmm}/${tomorrowyyyy}`;
   meal.find({date:formattedtomorrow}).then((x)=>{
-     console.log(x);
-     console.log(x[0]);
    res.render("menu",{Day:"Tomorrow",breakfast:x[0].name.breakfast,lunch:x[0].name.lunch,snacks:x[0].name.snacks,dinner:x[0].name.dinner});
   }).catch((err)=>console.log(err))
 })

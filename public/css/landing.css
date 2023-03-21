@@ -1,6 +1,6 @@
 
 :root {
-    --jumbotron-padding-y: 3rem;
+    --jumbotron-padding-y: 3rvh;
   }
   
   .jumbotron {
@@ -9,26 +9,28 @@
     margin-bottom: 0;
     background-color: #fff;
   }
-  @media (min-width: 768px) {
+
+  @media (max-width: 767px) {
     .jumbotron {
       padding-top: calc(var(--jumbotron-padding-y) * 2);
       padding-bottom: calc(var(--jumbotron-padding-y) * 2);
     }
   }
+
   .intro{
-    padding-top: 11em;
-    padding-bottom: 10em;
+    padding-top: 11vh;
+    padding-bottom: 10vh;
   }
   .intropara{
     font-family: 'Montserrat', sans-serif;
-    padding-top: 1em;
+    padding-top: 1vh;
     font-size: x-large;
   }
   .jumbotron p:last-child {
     margin-bottom: 0;
   }
   .boxheading{
-    margin-top: 1.5em;
+    margin-top: 1.5vh;
     color: #fff;
     font-family: 'Alfa Slab One', cursive;
     font-size: xx-large;
@@ -49,7 +51,7 @@
 }
 
 .card-body{
-  min-height: 12em;
+  min-height: 22vh;
   align-items: center;
 }
 
@@ -60,19 +62,12 @@
   }
   
   .jumbotron .container {
-    max-width: 40rem;
+    min-height: 30vh;
+    max-width: 40rvh;
   }
-  
-  footer {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-  
-  footer p {
-    margin-bottom: .25rem;
-  }
+
+
   a{
     text-decoration:none
   }
   .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
-  

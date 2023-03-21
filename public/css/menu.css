@@ -1,34 +1,74 @@
 .main{
-    margin-left: 3em;
-    margin-right: 3em;
-    margin-bottom: 5em;
+    margin-left: 3vh;
+    margin-right: 3vh;
+    margin-bottom: 5vh;
 }
 a{
     text-decoration: none;
     color: white;
 }
 .main-heading{
-    margin-top: 2em;
+    margin-top: 4vh;
     text-align: center;
     font-family: 'Rubik Dirt', cursive;
 }
 .meal-heading{
-    margin-top: 2em;
+    margin-top: 2vh;
     font-family: 'Alfa Slab One', cursive;
 
 }
 .list-item{
     font-family: 'Oswald', sans-serif;
     font-size: larger;
-    padding-bottom: 1em;
+    padding-left: 4vh;
+    padding-bottom: 1vh;
 }
 .bottom-text{
-    margin-top: 2em;
+    margin-top: 2vh;
     font-family: 'Alfa Slab One', cursive;
     
 }
+
 .bottom{
     text-align: center;
-    margin-left: 4em;
-    margin-bottom: 3em;
+    margin-left: 4vh;
+    margin-bottom: 3vh;
 }
+
+  
+  .jumbotron {
+    padding-top: var(--jumbotron-padding-y);
+    padding-bottom: var(--jumbotron-padding-y);
+    margin-bottom: 0;
+    background-color: #fff;
+  }
+  @media (min-width: 768px) {
+    .jumbotron {
+      padding-top: calc(var(--jumbotron-padding-y) * 2);
+      padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+    }
+  }
+  
+  .jumbotron p:last-child {
+    margin-bottom: 0;
+  }
+  
+  .jumbotron-heading {
+    font-weight: 300;
+  }
+  
+  .jumbotron .container {
+    max-width: 40rem;
+  }
+  
+  footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  
+  footer p {
+    margin-bottom: .25rem;
+  }
+  
+  .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+  
