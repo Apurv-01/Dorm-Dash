@@ -4,7 +4,7 @@ const menuNavlink = document.querySelector('.menu');
 if(window.location.pathname =='/'){
     homeNavlink.classList.add('active');
 }
-else if(window.location.pathname =='/mess-menu'){
+else if(window.location.pathname == '/mess-menu'||'/tomorrow-mess-menu'){
     menuNavlink.classList.add('active');
 
 }

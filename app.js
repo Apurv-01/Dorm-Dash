@@ -27,10 +27,7 @@ app.get('/mess-menu',(req,res)=>{
    let mm = today.getMonth()+1;
    let yyyy = today.getFullYear();
    let formattedToday = `${dd}/${mm}/${yyyy}`;
-   console.log(today);
    meal.find({date:formattedToday}).then((x)=>{
-      console.log(x);
-      console.log(x[0]);
     res.render("menu",{Day:"Today",breakfast:x[0].name.breakfast,lunch:x[0].name.lunch,snacks:x[0].name.snacks,dinner:x[0].name.dinner});
    }).catch((err)=>console.log(err))
 })
