@@ -6,7 +6,7 @@ app.set('view engine', 'ejs');
 //
 //
  
- mongoose.connect(`mongodb+srv://Apurv:YukZV8WPzzJCS1G4@cluster0.hl6wk8j.mongodb.net/MealDB`,
+ mongoose.connect(`mongodb+srv://Apurv:tiveTO57iZ44wPFg@cluster0.hl6wk8j.mongodb.net/MealDB`,
  {
    useNewUrlParser: true
  }).then(()=>console.log("connected to mongoose"));
