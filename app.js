@@ -1,12 +1,13 @@
+require('dotenv').config();
 const express = require('express');
 const app = express();
-app.use(express.static( 'public'));
+app.use(express.static('public'));
 const mongoose = require('mongoose');
 app.set('view engine', 'ejs');
 //
 //
- 
- mongoose.connect(`mongodb+srv://Apurv:tiveTO57iZ44wPFg@cluster0.hl6wk8j.mongodb.net/MealDB`,
+
+ mongoose.connect(`mongodb+srv://${process.env.USER_NAME}:${process.env.PASS}@cluster0.hl6wk8j.mongodb.net/${process.env.DB_NAME}`,
  {
    useNewUrlParser: true
  }).then(()=>console.log("connected to mongoose"));
